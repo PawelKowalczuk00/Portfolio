@@ -1,4 +1,33 @@
-div {
-    font-size: 40px;
-    color: red;
+figcaption {
+    font-size: 10em;
+    font-weight: bolder;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40em;
+}
+
+.container {
+    display: flex;
+    flex-direction: ;
+    margin: 0.5% 5% 0 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .first-box {
+    width: 100%;
+    border: 10px solid black;
+    flex: 100%;
+}
+
+.container .box {
+    width: 400px;
+    margin: 0 5px 0 px;
+    padding: 20px;
+    border: 10px solid pink;
 }
