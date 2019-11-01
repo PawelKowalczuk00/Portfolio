@@ -1,0 +1,87 @@
+    /*font-family: 'Lobster', cursive;
+    font-family: 'Fira Code', monospace;
+    font-family: 'PT Serif', serif;*/
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .navbar-brand img {
+        width: 20px;
+        height: 20px;
+    }
+
+    body {
+        background-color: rgb(39, 40, 46);
+    }
+
+    div.flexbox-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        background-color: orange;
+        /*margin: 2.8vh 15vw;*/
+    }
+
+    .flexbox-container .box {
+        border: 5px solid red;
+        background-color: pink;
+    }
+
+    #welcome>header {
+        position: relative;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        min-height: 40vmax;
+        background-image: url("img/welcome.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+        background-position: center;
+    }
+
+    header > h1 {
+        position: relative;
+        top: 15vmax;
+
+        color: white;
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.5em;
+        text-shadow: -8px 7px 9px rgba(189, 203, 243, 0.79);
+    }
+
+    #about.box {
+        min-width: 70vw;
+    }
+
+    #about > section.content {
+        display: flex;
+        align-items: center;
+    }
+
+    .content > img {
+        width: 15vmax;
+        height: 15vmax;
+        flex: 1 1 1;
+    }
+
+    .content > p {
+        text-justify: auto;
+        font-size: 2.5vmax;
+        flex: 3 1 3;
+    }
+
+    #skills > h2 {
+        text-align: center;
+    }

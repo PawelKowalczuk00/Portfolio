@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Paweł Kowalczuk">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <title>
         Paweł Kowalczuk - Portfolio
@@ -15,18 +18,89 @@
 </head>
 
 <body>
-    <nav class="container" id="top">
-        <div class="box first-box"><a href="#top"><img class="logo-pos" src="img/csharp.png" alt="ikona c#">Zmyślone portfolio hehe</a></div>
-        <div class="box"><a href="#about">About me</a></div>
-        <div class="box"><a href="#skills">Skills</a></div>
-        <div class="box"><a href="#projects">Projects</a></div>
-        <div class="box"><a href="#contact">Contact</a></div>
-    </nav>
-    <div class="content">
-        <div class="">
-            
+    <!--Pasek nawigacyjny przy użyciu bootstrapa-->
+    <section>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+
+            <a class="navbar-brand" href="#top"><img src="img/csharp.png" class="d-inline-block mr-1 align-bottom"
+                    alt=""> Zmyślone Portfolio hehe</a>
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"> About me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"> Skills </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#projects" data-toggle="dropdown" role="button">
+                            Projects </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#project1"> Data evaluation using LabVIEW </a>
+                            <a class="dropdown-item" href="#project2"> Functioning web aplication using .NET Core </a>
+                            <a class="dropdown-item" href="#project3"> "A Game" - my game developped with Unity </a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> Contact </a>
+                    </li>
+
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+    </section>
+    <!--Ciało strony-->
+    <div class="flexbox-container col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <div class="box" id="welcome">
+            <header>
+                <h1>Programmers Portfolio</h1>
+            </header>
+        </div>
+        <div class="box" id="about">
+            <section class="content">
+                <img src="img/selfie.png" alt="My Photo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                    condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
+                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
+                    vel
+                    luctus mi. Nam eget risus nisi.
+                </p>
+            </section>
+        </div>
+        <div class="box" id="skills">
+            <h2>My Skills:</h2>
+            <section class="content">
+                <div><img src="img/csharp.png" alt=""></div>
+                <div><img src="img/lv.png" alt=""></div>
+                <div><img src="img/unity.png" alt=""></div>
+                <div><img src="img/sql.png" alt=""></div>
+            </section>
+        </div>
+        <div class="box small" id="projects">
+            <img src="img/netcore.png" alt="">
+            <img src="img/game.png" alt="">
+            <img src="img/data.png" alt="">
+
+        </div>
+        <div class="box" id="contact">
+
         </div>
     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
-
-</html>
