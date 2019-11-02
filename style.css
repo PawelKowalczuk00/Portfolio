@@ -11,6 +11,26 @@
         font-family: 'PT Serif', serif;
         padding: 0;
         margin: 0;
+        color: white;
+    }
+
+    .return {
+        position: fixed;
+        z-index: 3;
+        bottom: 0;
+        right: 0;
+        width: 5vmax;
+        height: 5vmax;
+        background-color: rgb(76, 76, 104);
+        background-image: url("img/arrow.png");
+        background-size: contain;
+        opacity: 0.3;
+        text-align: center;
+        font-size: 4vmax;
+        font-weight: 800;
+    }
+    .return:hover{
+        opacity: 0.6;
     }
 
     h1 {
@@ -18,11 +38,11 @@
         font-weight: 800;
     }
     h2 {
-        font-size: 3vmax;
+        font-size: 2.8vmax;
         font-weight: 700;
     }
     h3 {
-        font-size: 2.75vmax;
+        font-size: 2.5vmax;
         font-weight: 600;
     }
     p, label {
@@ -63,12 +83,10 @@
 
     div.flexbox-container {
         padding: 0;
-        background-color: orange;
     }
 
-    .flexbox-container .box {
-        border: 5px solid red;
-        background-color: pink;
+    .flexbox-container .box, h2, h1 {
+        margin: 1.5vmax .3vmax;
     }
 
     #welcome>header {
@@ -130,37 +148,45 @@
 
     .content .s-box {
         flex: 1;
-        border: 0.5vmax solid blue;
+        border: 0.5vmax groove blue;
         position: relative;
         transition: all .4s linear;
+        min-width: 35%;
+        min-height: 40vh;
     }
     .content .s-box:hover {
-        border: 1.5vmax groove blue;
+        border: 0.5vmax solid blue;
     }
-    .s-box > img {
-        max-width: 30vmax;
-        height: 30vmax;
+    #skills .s-box > img {
+        max-width: 85%;
         opacity: 1;
-        z-index: 2;
         transition: all 1s linear;
     }
-    .s-box:hover > img {
+    #skills .s-box:hover > img {
         opacity: 0;
     }
-    .s-box > p {
+    #skills .s-box > p {
         position: absolute;
         top: 3.3vmax;
         padding: 1.5vmax;
         opacity: 0;
         transition: all 1s linear;
     }
-    .s-box:hover > p {
+    #skills .s-box:hover > p {
         opacity: 1;
+    }
+
+    #projects.box .s-box {
+        padding-bottom: 1vmax;
+        border-bottom: 0.2vmax solid blue;
     }
 
     #projects.box img{
         max-width: 100%;
-        text-align: center;
+    }
+
+    #projects.box p{
+        padding: .5vmax .75vmax;
     }
 
     .code {
@@ -186,9 +212,9 @@
     
     .send {
         background-color: #4CAF50;
-        color: white;
+        
         padding: 16px 20px;
-        margin: 1vmax 0 8vmax 0;
+        margin: 1vmax 0 1vmax 0;
         border: none;
         cursor: pointer;
         width: 100%;
@@ -197,4 +223,8 @@
       .send:hover {
         opacity:1;
       }
+
+      #contact.box * {
+        color: black;
+    }
     
