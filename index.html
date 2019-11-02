@@ -66,11 +66,11 @@
         </div>
         <div class="box" id="about">
             <section class="content">
-                <img src="img/selfie.png" alt="My Photo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                <img src="img/spiral.png" alt="My Photo">
+                <p><strong>ipsum dolor sit amet,</strong> consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
                     condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
-                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
-                    vel luctus mi. Nam eget risus nisi.</p>
+                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. <em>Nullam nec pretium nibh,
+                    vel luctus mi. Nam eget risus nisi.</em></p>
             </section>
         </div>
         <div class="box" id="skills">
@@ -106,17 +106,50 @@
             </section>
         </div>
         <div class="box" id="projects">
-            <img src="img/netcore.png" alt="">
-            <img src="img/game.png" alt="">
-            <img src="img/data.png" alt="">
+            <div class="column">
+                <h2>Web Application</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                    condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
+                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
+                    vel luctus mi. Nam eget risus nisi.</p>
+                <p><a href="#" target="_blank" title="my project">Lorem ipsum dolor sit amet</a></p><img src="img/netcore.png" alt="">
+            </div>
+            <div class="column">
+                    <h2>Unity Game</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                    condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
+                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
+                    vel luctus mi. Nam eget risus nisi.</p><img src="img/game.png" alt="">
+            </div>
+            <div class="column">
+                    <h2>Rozwiązania w Diademie</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                    condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
+                    Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
+                    vel luctus mi. Nam eget risus nisi.</p>
+                <p class="code">Dim arrWorker1, arrWorker2, arrWorker3, arrWorker4, arrWorker5, bResult<br>
+                        bResult = bAssignFilePathsToWorkerArrays(arrFilePaths, arrWorker1, arrWorker2, arrWorker3, arrWorker4, arrWorker5)<br>
+                        If Not bResult Then<br>
+                          Call LogFileWrite("ERROR - Fn bAssignFilePathsToWorkerArrays()")<br>
+                        Else<br>
+                          bResult = bDoParallelProcess(arrWorker1, arrWorker2, arrWorker3, arrWorker4, arrWorker5)<br>
+                          Call LogFileWrite("bDoParallelProcess() = " & bResult)<br>
+                        End If<br>
+                        </p><img src="img/data.png" alt="">
+            </div>
+
+
+
 
         </div>
         <div class="box" id="contact">
             <h2>Contact</h2>
             <p>If you have additional questions please send me a message:</p>
-            <form action="php/...">
-                <label>E-mail:<br><input type="text" placeholder="example@xx.xx"></label>
-                <label>Phone number:<br><input type="number" placeholder="optional"></label>
+            <form action="">
+                <label>E-mail:<br><input type="email" placeholder="example@xx.xx"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+                <label>Phone number:<br><input type="tel" maxlength="9" pattern="\d*" title="9 digits"
+                        placeholder="optional"></label>
                 <label>Title:<br><input type="text" placeholder="What's in your mind?"></label>
                 <label>Message:<br><textarea rows="8" cols="44" placeholder="Type a message here..."></textarea></label>
                 <button class="send">Send</button>
