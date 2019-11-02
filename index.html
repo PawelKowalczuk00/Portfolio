@@ -35,7 +35,8 @@
                         <a class="nav-link" href="#skills"> Skills </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#projects" data-toggle="dropdown" role="button">
+                        <a class="nav-link dropdown-toggle" href="#projects" data-toggle="dropdown" data-target="#menu"
+                            role="button">
                             Projects </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#project1"> Data evaluation using LabVIEW </a>
@@ -69,28 +70,57 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
                     condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.
                     Vestibulum quis lorem pretium, imperdiet libero porta, molestie tortor. Nullam nec pretium nibh,
-                    vel
-                    luctus mi. Nam eget risus nisi.
-                </p>
+                    vel luctus mi. Nam eget risus nisi.</p>
             </section>
         </div>
         <div class="box" id="skills">
             <h2>My Skills:</h2>
             <section class="content">
-                <div><img src="img/csharp.png" alt=""></div>
-                <div><img src="img/lv.png" alt=""></div>
-                <div><img src="img/unity.png" alt=""></div>
-                <div><img src="img/sql.png" alt=""></div>
+                <div class="s-box">
+                    <h3>Język C#</h3>
+                    <img src="img/csharp.png" alt="C# logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                        condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.</p>
+                </div>
+                <div class="s-box">
+                    <h3>Środowisko LabView</h3>
+                    <img src="img/lv.png" alt="LabView logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                        condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.</p>
+
+                </div>
+                <div class="s-box">
+                    <h3>Silnik Unity</h3>
+                    <img src="img/unity.png" alt="unity logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                        condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.</p>
+
+                </div>
+                <div class="s-box">
+                    <h3>Bazy Danych SQL</h3>
+                    <img src="img/sql.png" alt="sql logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan nisl eu mauris tristique
+                        condimentum. Integer a tempus neque. Sed consequat nisl elit, non aliquet neque dictum vel.</p>
+
+                </div>
             </section>
         </div>
-        <div class="box small" id="projects">
+        <div class="box" id="projects">
             <img src="img/netcore.png" alt="">
             <img src="img/game.png" alt="">
             <img src="img/data.png" alt="">
 
         </div>
         <div class="box" id="contact">
-
+            <h2>Contact</h2>
+            <p>If you have additional questions please send me a message:</p>
+            <form action="php/...">
+                <label>E-mail:<br><input type="text" placeholder="example@xx.xx"></label>
+                <label>Phone number:<br><input type="number" placeholder="optional"></label>
+                <label>Title:<br><input type="text" placeholder="What's in your mind?"></label>
+                <label>Message:<br><textarea rows="8" cols="44" placeholder="Type a message here..."></textarea></label>
+                <button class="send">Send</button>
+            </form>
         </div>
     </div>
     </div>
