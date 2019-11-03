@@ -164,13 +164,14 @@
     }
     #skills .s-box > p {
         position: absolute;
-        top: 3.3vmax;
+        top: 4.5vmax;
         padding: 1.5vmax;
         opacity: 0;
         transition: all 0.4s linear;
     }
     @media (max-width: 400px) {
         #skills .s-box > p {
+
             font-size: 1vmax;
         }
     }
