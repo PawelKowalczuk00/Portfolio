@@ -175,7 +175,7 @@
 
     #projects.box .s-box {
         padding-bottom: 1vmax;
-        border-bottom: 0.2vmax solid var(--borders-color);;
+        border-bottom: 0.2vmax solid var(--borders-color);
     }
 
     #projects.box img{
@@ -187,6 +187,9 @@
     }
 
     .code {
+        border: 2px solid var(--borders-color);
+        color: rgb(204, 199, 188);
+        background-color: rgba(0, 0, 0, 0.548);
         font-family: 'Fira Code', monospace;
     }
 
@@ -222,5 +225,10 @@
 
       #contact.box * {
         color: var(--contact-color);
+    }
+
+    #contact.box .dynamic-size {
+        rows: 8;
+        cols: 44;
     }
     
