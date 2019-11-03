@@ -49,7 +49,7 @@
 
     @media (max-width: 767px) {
         h1 {
-            font-size: 5vmax;
+            font-size: 4.4vmax;
         }
         h2 {
             font-size: 4vmax;
@@ -61,7 +61,7 @@
             font-size: 3vmax;
         }
         .s-box p {
-            font-size: 2.4vmax;
+            font-size: 2vmax;
         }
     }
 
