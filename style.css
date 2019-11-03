@@ -1,16 +1,13 @@
-    /*font-family: 'Lobster', cursive;
-    font-family: 'Fira Code', monospace;
-    font-family: 'PT Serif', serif;*/
-
     :root {
-        
+        --bg-color: rgb(76, 76, 104);
+        --borders-color: blue;
+        --contact-bg-color: pink;
+        --contact-color: black;
     }
-
+    
     * {
         box-sizing: border-box;
         font-family: 'PT Serif', serif;
-        padding: 0;
-        margin: 0;
         color: white;
     }
 
@@ -78,7 +75,7 @@
     }
 
     body {
-        background-color: rgb(39, 40, 46);
+        background-color: var(--bg-color);
     }
 
     div.flexbox-container {
@@ -148,19 +145,19 @@
 
     .content .s-box {
         flex: 1;
-        border: 0.5vmax groove blue;
+        border: 0.5vmax groove var(--borders-color);
         position: relative;
         transition: all .4s linear;
         min-width: 35%;
         min-height: 40vh;
     }
     .content .s-box:hover {
-        border: 0.5vmax solid blue;
+        border: 0.5vmax solid var(--borders-color);;
     }
     #skills .s-box > img {
         max-width: 85%;
         opacity: 1;
-        transition: all 1s linear;
+        transition: all 0.4s linear;
     }
     #skills .s-box:hover > img {
         opacity: 0;
@@ -170,7 +167,7 @@
         top: 3.3vmax;
         padding: 1.5vmax;
         opacity: 0;
-        transition: all 1s linear;
+        transition: all 0.4s linear;
     }
     #skills .s-box:hover > p {
         opacity: 1;
@@ -178,7 +175,7 @@
 
     #projects.box .s-box {
         padding-bottom: 1vmax;
-        border-bottom: 0.2vmax solid blue;
+        border-bottom: 0.2vmax solid var(--borders-color);;
     }
 
     #projects.box img{
@@ -194,7 +191,7 @@
     }
 
     #contact.box {
-        background-color: pink;
+        background-color: var(--contact-bg-color);
         padding: 2vmax;
     } 
     #contact.box label {
@@ -215,7 +212,6 @@
         
         padding: 16px 20px;
         margin: 1vmax 0 1vmax 0;
-        border: none;
         cursor: pointer;
         width: 100%;
         opacity: 0.9;
@@ -225,6 +221,6 @@
       }
 
       #contact.box * {
-        color: black;
+        color: var(--contact-color);
     }
     
