@@ -49,10 +49,10 @@
 
     @media (max-width: 767px) {
         h1 {
-            font-size: 4.4vmax;
+            font-size: 3.5vmax;
         }
         h2 {
-            font-size: 4vmax;
+            font-size: 3.5vmax;
         }
         h3 {
             font-size: 3.5vmax;
@@ -61,7 +61,7 @@
             font-size: 3vmax;
         }
         .s-box p {
-            font-size: 2.4vmax;
+            font-size: 3vmax;
         }
         a.navbar-brand {
             font-size: 2.4vmax;
@@ -171,11 +171,6 @@
         padding: 1.5vmax;
         opacity: 0;
         transition: all 0.4s linear;
-    }
-    @media (max-width: 600px) {
-        #skills .s-box > p {
-            font-size: 2vmax;
-        }
     }
     #skills .s-box:hover > p {
         opacity: 1;
