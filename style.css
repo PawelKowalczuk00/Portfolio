@@ -61,7 +61,7 @@
             font-size: 3vmax;
         }
         .s-box p {
-            font-size: 3vmax;
+            font-size: 1.5vmax;
         }
         a.navbar-brand {
             font-size: 2.4vmax;
@@ -167,7 +167,7 @@
     }
     #skills .s-box > p {
         position: absolute;
-        top: 5.5vmax;
+        top: 3.3vmax;
         padding: 1.5vmax;
         opacity: 0;
         transition: all 0.4s linear;
