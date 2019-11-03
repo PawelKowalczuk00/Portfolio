@@ -164,7 +164,7 @@
     }
     #skills .s-box > p {
         position: absolute;
-        top: 4.5vmax;
+        top: 5.5vmax;
         padding: 1.5vmax;
         opacity: 0;
         transition: all 0.4s linear;
